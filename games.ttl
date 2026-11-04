@@ -1,0 +1,484 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gm: <https://example.org/games/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gm:Country a rdfs:Class ;
+    rdfs:label "Country"@en ;
+    rdfs:subClassOf schema:Country .
+
+gm:Game a rdfs:Class ;
+    rdfs:label "Game"@en ;
+    rdfs:subClassOf schema:VideoGame .
+
+gm:Genre a rdfs:Class ;
+    rdfs:label "Genre"@en ;
+    rdfs:subClassOf schema:Thing .
+
+gm:Person a rdfs:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:subClassOf schema:Person .
+
+gm:Platform a rdfs:Class ;
+    rdfs:label "Platform"@en ;
+    rdfs:subClassOf schema:Thing .
+
+gm:Publisher a rdfs:Class ;
+    rdfs:label "Publisher"@en ;
+    rdfs:subClassOf schema:Organization .
+
+gm:Studio a rdfs:Class ;
+    rdfs:label "Studio"@en ;
+    rdfs:subClassOf schema:Organization .
+
+gm:basedIn a rdf:Property ;
+    rdfs:domain gm:Studio ;
+    rdfs:range gm:Country .
+
+gm:developedBy a rdf:Property ;
+    rdfs:domain gm:Game ;
+    rdfs:range gm:Studio .
+
+gm:foundedBy a rdf:Property ;
+    rdfs:domain gm:Studio ;
+    rdfs:range gm:Person .
+
+gm:foundingYear a rdf:Property ;
+    rdfs:domain gm:Studio ;
+    rdfs:range xsd:integer .
+
+<https://example.org/games/game/baldurs-gate-3> a gm:Game ;
+    rdfs:label "Baldur's Gate 3"@uk ;
+    dcterms:title "Baldur's Gate 3"@uk ;
+    gm:developedBy <https://example.org/games/studio/larian-studios> ;
+    gm:hasGenre <https://example.org/games/genre/rolova-hra> ;
+    gm:publishedBy <https://example.org/games/publisher/larian-studios> ;
+    gm:releaseYear 2023 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-5>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-series-x-s> ;
+    schema:datePublished "2023"^^xsd:gYear ;
+    schema:name "Baldur's Gate 3"@uk .
+
+<https://example.org/games/game/cossacks-european-wars> a gm:Game ;
+    rdfs:label "Cossacks: European Wars"@uk ;
+    dcterms:title "Cossacks: European Wars"@uk ;
+    gm:developedBy <https://example.org/games/studio/gsc-game-world> ;
+    gm:hasGenre <https://example.org/games/genre/stratehiia-v-realnomu-chasi> ;
+    gm:publishedBy <https://example.org/games/publisher/cdv-software-entertainment> ;
+    gm:releaseYear 2001 ;
+    gm:releasedOn <https://example.org/games/platform/windows> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:name "Cossacks: European Wars"@uk .
+
+<https://example.org/games/game/cyberpunk-2077> a gm:Game ;
+    rdfs:label "Cyberpunk 2077"@uk ;
+    dcterms:title "Cyberpunk 2077"@uk ;
+    gm:developedBy <https://example.org/games/studio/cd-projekt-red> ;
+    gm:hasGenre <https://example.org/games/genre/rolova-hra>,
+        <https://example.org/games/genre/shuter-vid-pershoi-osoby> ;
+    gm:publishedBy <https://example.org/games/publisher/cd-projekt> ;
+    gm:releaseYear 2020 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-4>,
+        <https://example.org/games/platform/playstation-5>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-one> ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:name "Cyberpunk 2077"@uk .
+
+<https://example.org/games/game/dying-light> a gm:Game ;
+    rdfs:label "Dying Light"@uk ;
+    dcterms:title "Dying Light"@uk ;
+    gm:developedBy <https://example.org/games/studio/techland> ;
+    gm:hasGenre <https://example.org/games/genre/pryhodnytska-hra>,
+        <https://example.org/games/genre/survival-horror> ;
+    gm:publishedBy <https://example.org/games/publisher/warner-bros-interactive-entertainment> ;
+    gm:releaseYear 2015 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-4>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-one> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:name "Dying Light"@uk .
+
+<https://example.org/games/game/frostpunk> a gm:Game ;
+    rdfs:label "Frostpunk"@uk ;
+    dcterms:title "Frostpunk"@uk ;
+    gm:developedBy <https://example.org/games/studio/11-bit-studios> ;
+    gm:hasGenre <https://example.org/games/genre/mistobudivnyi-symuliator>,
+        <https://example.org/games/genre/symuliator-vyzhyvannia> ;
+    gm:publishedBy <https://example.org/games/publisher/11-bit-studios> ;
+    gm:releaseYear 2018 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-4>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-one> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:name "Frostpunk"@uk .
+
+<https://example.org/games/game/half-life-2> a gm:Game ;
+    rdfs:label "Half-Life 2"@uk ;
+    dcterms:title "Half-Life 2"@uk ;
+    gm:developedBy <https://example.org/games/studio/valve> ;
+    gm:hasGenre <https://example.org/games/genre/shuter-vid-pershoi-osoby> ;
+    gm:publishedBy <https://example.org/games/publisher/valve> ;
+    gm:releaseYear 2004 ;
+    gm:releasedOn <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-360> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:name "Half-Life 2"@uk .
+
+<https://example.org/games/game/metro-exodus> a gm:Game ;
+    rdfs:label "Metro Exodus"@uk ;
+    dcterms:title "Metro Exodus"@uk ;
+    gm:developedBy <https://example.org/games/studio/4a-games> ;
+    gm:hasGenre <https://example.org/games/genre/shuter-vid-pershoi-osoby> ;
+    gm:publishedBy <https://example.org/games/publisher/deep-silver> ;
+    gm:releaseYear 2019 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-4>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-one> ;
+    gm:sequelOf <https://example.org/games/game/metro-last-light> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:name "Metro Exodus"@uk .
+
+<https://example.org/games/game/portal-2> a gm:Game ;
+    rdfs:label "Portal 2"@uk ;
+    dcterms:title "Portal 2"@uk ;
+    gm:developedBy <https://example.org/games/studio/valve> ;
+    gm:hasGenre <https://example.org/games/genre/holovolomka>,
+        <https://example.org/games/genre/shuter-vid-pershoi-osoby> ;
+    gm:publishedBy <https://example.org/games/publisher/valve> ;
+    gm:releaseYear 2011 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-3>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-360> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:name "Portal 2"@uk .
+
+<https://example.org/games/game/s-t-a-l-k-e-r-call-of-pripyat> a gm:Game ;
+    rdfs:label "S.T.A.L.K.E.R.: Call of Pripyat"@uk ;
+    dcterms:title "S.T.A.L.K.E.R.: Call of Pripyat"@uk ;
+    gm:developedBy <https://example.org/games/studio/gsc-game-world> ;
+    gm:hasGenre <https://example.org/games/genre/shuter-vid-pershoi-osoby>,
+        <https://example.org/games/genre/survival-horror> ;
+    gm:publishedBy <https://example.org/games/publisher/gsc-world-publishing> ;
+    gm:releaseYear 2009 ;
+    gm:releasedOn <https://example.org/games/platform/windows> ;
+    gm:sequelOf <https://example.org/games/game/s-t-a-l-k-e-r-clear-sky> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:name "S.T.A.L.K.E.R.: Call of Pripyat"@uk .
+
+<https://example.org/games/game/the-witcher-3-wild-hunt> a gm:Game ;
+    rdfs:label "The Witcher 3: Wild Hunt"@uk ;
+    dcterms:title "The Witcher 3: Wild Hunt"@uk ;
+    gm:developedBy <https://example.org/games/studio/cd-projekt-red> ;
+    gm:hasGenre <https://example.org/games/genre/pryhodnytska-hra>,
+        <https://example.org/games/genre/rolova-hra> ;
+    gm:publishedBy <https://example.org/games/publisher/cd-projekt> ;
+    gm:releaseYear 2015 ;
+    gm:releasedOn <https://example.org/games/platform/nintendo-switch>,
+        <https://example.org/games/platform/playstation-4>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-one> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:name "The Witcher 3: Wild Hunt"@uk .
+
+<https://example.org/games/game/this-war-of-mine> a gm:Game ;
+    rdfs:label "This War of Mine"@uk ;
+    dcterms:title "This War of Mine"@uk ;
+    gm:developedBy <https://example.org/games/studio/11-bit-studios> ;
+    gm:hasGenre <https://example.org/games/genre/survival-horror>,
+        <https://example.org/games/genre/symuliator-vyzhyvannia> ;
+    gm:publishedBy <https://example.org/games/publisher/11-bit-studios> ;
+    gm:releaseYear 2014 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-4>,
+        <https://example.org/games/platform/windows> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:name "This War of Mine"@uk .
+
+gm:hasGenre a rdf:Property ;
+    rdfs:domain gm:Game ;
+    rdfs:range gm:Genre .
+
+gm:publishedBy a rdf:Property ;
+    rdfs:domain gm:Game ;
+    rdfs:range gm:Publisher .
+
+gm:releaseYear a rdf:Property ;
+    rdfs:domain gm:Game ;
+    rdfs:range xsd:integer .
+
+gm:releasedOn a rdf:Property ;
+    rdfs:domain gm:Game ;
+    rdfs:range gm:Platform .
+
+gm:sequelOf a rdf:Property ;
+    rdfs:domain gm:Game ;
+    rdfs:range gm:Game .
+
+<https://example.org/games/country/belhiia> a gm:Country ;
+    rdfs:label "Бельгія"@uk ;
+    schema:name "Бельгія"@uk .
+
+<https://example.org/games/country/malta> a gm:Country ;
+    rdfs:label "Мальта"@uk ;
+    schema:name "Мальта"@uk .
+
+<https://example.org/games/country/ssha> a gm:Country ;
+    rdfs:label "США"@uk ;
+    schema:name "США"@uk .
+
+<https://example.org/games/country/ukraina> a gm:Country ;
+    rdfs:label "Україна"@uk ;
+    schema:name "Україна"@uk .
+
+<https://example.org/games/game/metro-2033> a gm:Game ;
+    rdfs:label "Metro 2033"@uk ;
+    dcterms:title "Metro 2033"@uk ;
+    gm:developedBy <https://example.org/games/studio/4a-games> ;
+    gm:hasGenre <https://example.org/games/genre/shuter-vid-pershoi-osoby>,
+        <https://example.org/games/genre/survival-horror> ;
+    gm:publishedBy <https://example.org/games/publisher/thq> ;
+    gm:releaseYear 2010 ;
+    gm:releasedOn <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-360> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:name "Metro 2033"@uk .
+
+<https://example.org/games/game/metro-last-light> a gm:Game ;
+    rdfs:label "Metro: Last Light"@uk ;
+    dcterms:title "Metro: Last Light"@uk ;
+    gm:developedBy <https://example.org/games/studio/4a-games> ;
+    gm:hasGenre <https://example.org/games/genre/shuter-vid-pershoi-osoby> ;
+    gm:publishedBy <https://example.org/games/publisher/deep-silver> ;
+    gm:releaseYear 2013 ;
+    gm:releasedOn <https://example.org/games/platform/playstation-3>,
+        <https://example.org/games/platform/windows>,
+        <https://example.org/games/platform/xbox-360> ;
+    gm:sequelOf <https://example.org/games/game/metro-2033> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:name "Metro: Last Light"@uk .
+
+<https://example.org/games/game/s-t-a-l-k-e-r-clear-sky> a gm:Game ;
+    rdfs:label "S.T.A.L.K.E.R.: Clear Sky"@uk ;
+    dcterms:title "S.T.A.L.K.E.R.: Clear Sky"@uk ;
+    gm:developedBy <https://example.org/games/studio/gsc-game-world> ;
+    gm:hasGenre <https://example.org/games/genre/shuter-vid-pershoi-osoby>,
+        <https://example.org/games/genre/survival-horror> ;
+    gm:publishedBy <https://example.org/games/publisher/deep-silver> ;
+    gm:releaseYear 2008 ;
+    gm:releasedOn <https://example.org/games/platform/windows> ;
+    gm:sequelOf <https://example.org/games/game/s-t-a-l-k-e-r-shadow-of-chernobyl> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:name "S.T.A.L.K.E.R.: Clear Sky"@uk .
+
+<https://example.org/games/game/s-t-a-l-k-e-r-shadow-of-chernobyl> a gm:Game ;
+    rdfs:label "S.T.A.L.K.E.R.: Shadow of Chernobyl"@uk ;
+    dcterms:title "S.T.A.L.K.E.R.: Shadow of Chernobyl"@uk ;
+    gm:developedBy <https://example.org/games/studio/gsc-game-world> ;
+    gm:hasGenre <https://example.org/games/genre/shuter-vid-pershoi-osoby>,
+        <https://example.org/games/genre/survival-horror> ;
+    gm:publishedBy <https://example.org/games/publisher/thq> ;
+    gm:releaseYear 2007 ;
+    gm:releasedOn <https://example.org/games/platform/windows> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:name "S.T.A.L.K.E.R.: Shadow of Chernobyl"@uk .
+
+<https://example.org/games/genre/holovolomka> a gm:Genre ;
+    rdfs:label "Головоломка"@uk ;
+    schema:name "Головоломка"@uk .
+
+<https://example.org/games/genre/mistobudivnyi-symuliator> a gm:Genre ;
+    rdfs:label "Містобудівний симулятор"@uk ;
+    schema:name "Містобудівний симулятор"@uk .
+
+<https://example.org/games/genre/stratehiia-v-realnomu-chasi> a gm:Genre ;
+    rdfs:label "Стратегія в реальному часі"@uk ;
+    schema:name "Стратегія в реальному часі"@uk .
+
+<https://example.org/games/person/andrii-prokhorov> a gm:Person ;
+    rdfs:label "Андрій Прохоров"@uk ;
+    foaf:name "Андрій Прохоров"@uk .
+
+<https://example.org/games/person/heib-niuell> a gm:Person ;
+    rdfs:label "Гейб Ньюелл"@uk ;
+    foaf:name "Гейб Ньюелл"@uk .
+
+<https://example.org/games/person/hzhehozh-miekhovskyi> a gm:Person ;
+    rdfs:label "Гжегож Мєховський"@uk ;
+    foaf:name "Гжегож Мєховський"@uk .
+
+<https://example.org/games/person/martsin-ivinskyi> a gm:Person ;
+    rdfs:label "Марцін Івінський"@uk ;
+    foaf:name "Марцін Івінський"@uk .
+
+<https://example.org/games/person/pavel-markhevka> a gm:Person ;
+    rdfs:label "Павел Мархевка"@uk ;
+    foaf:name "Павел Мархевка"@uk .
+
+<https://example.org/games/person/serhii-hryhorovych> a gm:Person ;
+    rdfs:label "Сергій Григорович"@uk ;
+    foaf:name "Сергій Григорович"@uk .
+
+<https://example.org/games/person/sven-vinke> a gm:Person ;
+    rdfs:label "Свен Вінке"@uk ;
+    foaf:name "Свен Вінке"@uk .
+
+<https://example.org/games/platform/nintendo-switch> a gm:Platform ;
+    rdfs:label "Nintendo Switch"@uk ;
+    schema:name "Nintendo Switch"@uk .
+
+<https://example.org/games/platform/xbox-series-x-s> a gm:Platform ;
+    rdfs:label "Xbox Series X/S"@uk ;
+    schema:name "Xbox Series X/S"@uk .
+
+<https://example.org/games/publisher/cdv-software-entertainment> a gm:Publisher ;
+    rdfs:label "cdv Software Entertainment"@uk ;
+    schema:name "cdv Software Entertainment"@uk .
+
+<https://example.org/games/publisher/gsc-world-publishing> a gm:Publisher ;
+    rdfs:label "GSC World Publishing"@uk ;
+    schema:name "GSC World Publishing"@uk .
+
+<https://example.org/games/publisher/warner-bros-interactive-entertainment> a gm:Publisher ;
+    rdfs:label "Warner Bros. Interactive Entertainment"@uk ;
+    schema:name "Warner Bros. Interactive Entertainment"@uk .
+
+<https://example.org/games/studio/larian-studios> a gm:Studio ;
+    rdfs:label "Larian Studios"@uk ;
+    dcterms:title "Larian Studios"@uk ;
+    owl:sameAs <https://example.org/games/publisher/larian-studios> ;
+    gm:basedIn <https://example.org/games/country/belhiia> ;
+    gm:foundedBy <https://example.org/games/person/sven-vinke> ;
+    gm:foundingYear 1996 ;
+    schema:name "Larian Studios"@uk .
+
+<https://example.org/games/studio/techland> a gm:Studio ;
+    rdfs:label "Techland"@uk ;
+    dcterms:title "Techland"@uk ;
+    gm:basedIn <https://example.org/games/country/polshcha> ;
+    gm:foundedBy <https://example.org/games/person/pavel-markhevka> ;
+    gm:foundingYear 1991 ;
+    schema:name "Techland"@uk .
+
+<https://example.org/games/genre/pryhodnytska-hra> a gm:Genre ;
+    rdfs:label "Пригодницька гра"@uk ;
+    schema:name "Пригодницька гра"@uk .
+
+<https://example.org/games/genre/symuliator-vyzhyvannia> a gm:Genre ;
+    rdfs:label "Симулятор виживання"@uk ;
+    schema:name "Симулятор виживання"@uk .
+
+<https://example.org/games/platform/playstation-3> a gm:Platform ;
+    rdfs:label "PlayStation 3"@uk ;
+    schema:name "PlayStation 3"@uk .
+
+<https://example.org/games/platform/playstation-5> a gm:Platform ;
+    rdfs:label "PlayStation 5"@uk ;
+    schema:name "PlayStation 5"@uk .
+
+<https://example.org/games/publisher/cd-projekt> a gm:Publisher ;
+    rdfs:label "CD Projekt"@uk ;
+    schema:name "CD Projekt"@uk .
+
+<https://example.org/games/publisher/larian-studios> a gm:Publisher ;
+    rdfs:label "Larian Studios"@uk ;
+    schema:name "Larian Studios"@uk .
+
+<https://example.org/games/publisher/thq> a gm:Publisher ;
+    rdfs:label "THQ"@uk ;
+    schema:name "THQ"@uk .
+
+<https://example.org/games/studio/11-bit-studios> a gm:Studio ;
+    rdfs:label "11 bit studios"@uk ;
+    dcterms:title "11 bit studios"@uk ;
+    owl:sameAs <https://example.org/games/publisher/11-bit-studios> ;
+    gm:basedIn <https://example.org/games/country/polshcha> ;
+    gm:foundedBy <https://example.org/games/person/hzhehozh-miekhovskyi> ;
+    gm:foundingYear 2010 ;
+    schema:name "11 bit studios"@uk .
+
+<https://example.org/games/studio/cd-projekt-red> a gm:Studio ;
+    rdfs:label "CD Projekt Red"@uk ;
+    dcterms:title "CD Projekt Red"@uk ;
+    gm:basedIn <https://example.org/games/country/polshcha> ;
+    gm:foundedBy <https://example.org/games/person/martsin-ivinskyi> ;
+    gm:foundingYear 2002 ;
+    schema:name "CD Projekt Red"@uk .
+
+<https://example.org/games/studio/valve> a gm:Studio ;
+    rdfs:label "Valve"@uk ;
+    dcterms:title "Valve"@uk ;
+    owl:sameAs <https://example.org/games/publisher/valve> ;
+    gm:basedIn <https://example.org/games/country/ssha> ;
+    gm:foundedBy <https://example.org/games/person/heib-niuell> ;
+    gm:foundingYear 1996 ;
+    schema:name "Valve"@uk .
+
+<https://example.org/games/country/polshcha> a gm:Country ;
+    rdfs:label "Польща"@uk ;
+    schema:name "Польща"@uk .
+
+<https://example.org/games/genre/rolova-hra> a gm:Genre ;
+    rdfs:label "Рольова гра"@uk ;
+    schema:name "Рольова гра"@uk .
+
+<https://example.org/games/publisher/11-bit-studios> a gm:Publisher ;
+    rdfs:label "11 bit studios"@uk ;
+    schema:name "11 bit studios"@uk .
+
+<https://example.org/games/publisher/deep-silver> a gm:Publisher ;
+    rdfs:label "Deep Silver"@uk ;
+    schema:name "Deep Silver"@uk .
+
+<https://example.org/games/publisher/valve> a gm:Publisher ;
+    rdfs:label "Valve"@uk ;
+    schema:name "Valve"@uk .
+
+<https://example.org/games/studio/4a-games> a gm:Studio ;
+    rdfs:label "4A Games"@uk ;
+    dcterms:title "4A Games"@uk ;
+    gm:basedIn <https://example.org/games/country/malta> ;
+    gm:foundedBy <https://example.org/games/person/andrii-prokhorov> ;
+    gm:foundingYear 2006 ;
+    schema:name "4A Games"@uk .
+
+<https://example.org/games/platform/xbox-360> a gm:Platform ;
+    rdfs:label "Xbox 360"@uk ;
+    schema:name "Xbox 360"@uk .
+
+<https://example.org/games/studio/gsc-game-world> a gm:Studio ;
+    rdfs:label "GSC Game World"@uk ;
+    dcterms:title "GSC Game World"@uk ;
+    gm:basedIn <https://example.org/games/country/ukraina> ;
+    gm:foundedBy <https://example.org/games/person/serhii-hryhorovych> ;
+    gm:foundingYear 1995 ;
+    schema:name "GSC Game World"@uk .
+
+<https://example.org/games/platform/xbox-one> a gm:Platform ;
+    rdfs:label "Xbox One"@uk ;
+    schema:name "Xbox One"@uk .
+
+<https://example.org/games/genre/survival-horror> a gm:Genre ;
+    rdfs:label "Survival horror"@uk ;
+    schema:name "Survival horror"@uk .
+
+<https://example.org/games/platform/playstation-4> a gm:Platform ;
+    rdfs:label "PlayStation 4"@uk ;
+    schema:name "PlayStation 4"@uk .
+
+<https://example.org/games/genre/shuter-vid-pershoi-osoby> a gm:Genre ;
+    rdfs:label "Шутер від першої особи"@uk ;
+    schema:name "Шутер від першої особи"@uk .
+
+<https://example.org/games/platform/windows> a gm:Platform ;
+    rdfs:label "Windows"@uk ;
+    schema:name "Windows"@uk .
+
+
+<https://example.org/games/game/cyberpunk-2077>
+    schema:gamePlatform "GeForce Now"@uk ;
+    schema:inLanguage "uk" .

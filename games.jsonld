@@ -1,0 +1,2179 @@
+[
+  {
+    "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Шутер від першої особи"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Шутер від першої особи"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/foundingYear",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Studio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/Person",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/developedBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Game"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://example.org/games/Studio"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/baldurs-gate-3",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Baldur's Gate 3"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Baldur's Gate 3"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/larian-studios"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/rolova-hra"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/larian-studios"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2023
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-5"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-series-x-s"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2023"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Baldur's Gate 3"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/genre/pryhodnytska-hra",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Пригодницька гра"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Пригодницька гра"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/valve",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Valve"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Valve"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/deep-silver",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Deep Silver"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Deep Silver"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/genre/stratehiia-v-realnomu-chasi",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Стратегія в реальному часі"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Стратегія в реальному часі"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/playstation-3",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "PlayStation 3"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "PlayStation 3"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/larian-studios",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Larian Studios"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Larian Studios"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/cossacks-european-wars",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Cossacks: European Wars"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Cossacks: European Wars"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/gsc-game-world"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/stratehiia-v-realnomu-chasi"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/cdv-software-entertainment"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2001
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2001"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Cossacks: European Wars"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/foundedBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Studio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://example.org/games/Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/genre/mistobudivnyi-symuliator",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Містобудівний симулятор"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Містобудівний симулятор"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/studio/techland",
+    "@type": [
+      "https://example.org/games/Studio"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Techland"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Techland"
+      }
+    ],
+    "https://example.org/games/basedIn": [
+      {
+        "@id": "https://example.org/games/country/polshcha"
+      }
+    ],
+    "https://example.org/games/foundedBy": [
+      {
+        "@id": "https://example.org/games/person/pavel-markhevka"
+      }
+    ],
+    "https://example.org/games/foundingYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1991
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Techland"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/country/belhiia",
+    "@type": [
+      "https://example.org/games/Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Бельгія"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Бельгія"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/portal-2",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Portal 2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Portal 2"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/valve"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/holovolomka"
+      },
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/valve"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2011
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-3"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-360"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2011"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Portal 2"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/releasedOn",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Game"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://example.org/games/Platform"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/Country",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Country"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/Publisher",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Publisher"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publishedBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Game"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://example.org/games/Publisher"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/xbox-one",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Xbox One"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Xbox One"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/windows",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Windows"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Windows"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/genre/symuliator-vyzhyvannia",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Симулятор виживання"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Симулятор виживання"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/Game",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Game"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/VideoGame"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/this-war-of-mine",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "This War of Mine"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "This War of Mine"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/11-bit-studios"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/survival-horror"
+      },
+      {
+        "@id": "https://example.org/games/genre/symuliator-vyzhyvannia"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/11-bit-studios"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2014
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-4"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2014"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "This War of Mine"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/country/ssha",
+    "@type": [
+      "https://example.org/games/Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "США"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "США"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/warner-bros-interactive-entertainment",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Warner Bros. Interactive Entertainment"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Warner Bros. Interactive Entertainment"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/Studio",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Studio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/genre/holovolomka",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Головоломка"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Головоломка"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/studio/cd-projekt-red",
+    "@type": [
+      "https://example.org/games/Studio"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "CD Projekt Red"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "CD Projekt Red"
+      }
+    ],
+    "https://example.org/games/basedIn": [
+      {
+        "@id": "https://example.org/games/country/polshcha"
+      }
+    ],
+    "https://example.org/games/foundedBy": [
+      {
+        "@id": "https://example.org/games/person/martsin-ivinskyi"
+      }
+    ],
+    "https://example.org/games/foundingYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2002
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "CD Projekt Red"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/hasGenre",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Game"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://example.org/games/Genre"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/s-t-a-l-k-e-r-shadow-of-chernobyl",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Shadow of Chernobyl"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Shadow of Chernobyl"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/gsc-game-world"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      },
+      {
+        "@id": "https://example.org/games/genre/survival-horror"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/thq"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2007
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2007"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Shadow of Chernobyl"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/gsc-world-publishing",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "GSC World Publishing"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "GSC World Publishing"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/studio/valve",
+    "@type": [
+      "https://example.org/games/Studio"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Valve"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Valve"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://example.org/games/publisher/valve"
+      }
+    ],
+    "https://example.org/games/basedIn": [
+      {
+        "@id": "https://example.org/games/country/ssha"
+      }
+    ],
+    "https://example.org/games/foundedBy": [
+      {
+        "@id": "https://example.org/games/person/heib-niuell"
+      }
+    ],
+    "https://example.org/games/foundingYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1996
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Valve"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/person/hzhehozh-miekhovskyi",
+    "@type": [
+      "https://example.org/games/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Гжегож Мєховський"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "uk",
+        "@value": "Гжегож Мєховський"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/person/martsin-ivinskyi",
+    "@type": [
+      "https://example.org/games/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Марцін Івінський"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "uk",
+        "@value": "Марцін Івінський"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/cyberpunk-2077",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Cyberpunk 2077"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Cyberpunk 2077"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/cd-projekt-red"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/rolova-hra"
+      },
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/cd-projekt"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2020
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-4"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-one"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-5"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2020"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Cyberpunk 2077"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/person/heib-niuell",
+    "@type": [
+      "https://example.org/games/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Гейб Ньюелл"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "uk",
+        "@value": "Гейб Ньюелл"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/country/ukraina",
+    "@type": [
+      "https://example.org/games/Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Україна"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Україна"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/cdv-software-entertainment",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "cdv Software Entertainment"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "cdv Software Entertainment"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/metro-exodus",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Metro Exodus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Metro Exodus"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/4a-games"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/deep-silver"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2019
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-4"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-one"
+      }
+    ],
+    "https://example.org/games/sequelOf": [
+      {
+        "@id": "https://example.org/games/game/metro-last-light"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2019"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Metro Exodus"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/person/andrii-prokhorov",
+    "@type": [
+      "https://example.org/games/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Андрій Прохоров"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "uk",
+        "@value": "Андрій Прохоров"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/person/sven-vinke",
+    "@type": [
+      "https://example.org/games/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Свен Вінке"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "uk",
+        "@value": "Свен Вінке"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/metro-last-light",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Metro: Last Light"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Metro: Last Light"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/4a-games"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/deep-silver"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2013
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-360"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-3"
+      }
+    ],
+    "https://example.org/games/sequelOf": [
+      {
+        "@id": "https://example.org/games/game/metro-2033"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2013"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Metro: Last Light"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/basedIn",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Studio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://example.org/games/Country"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/studio/gsc-game-world",
+    "@type": [
+      "https://example.org/games/Studio"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "GSC Game World"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "GSC Game World"
+      }
+    ],
+    "https://example.org/games/basedIn": [
+      {
+        "@id": "https://example.org/games/country/ukraina"
+      }
+    ],
+    "https://example.org/games/foundedBy": [
+      {
+        "@id": "https://example.org/games/person/serhii-hryhorovych"
+      }
+    ],
+    "https://example.org/games/foundingYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1995
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "GSC Game World"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/person/serhii-hryhorovych",
+    "@type": [
+      "https://example.org/games/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Сергій Григорович"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "uk",
+        "@value": "Сергій Григорович"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/Genre",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Genre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Thing"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/releaseYear",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Game"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/studio/11-bit-studios",
+    "@type": [
+      "https://example.org/games/Studio"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "11 bit studios"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "11 bit studios"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://example.org/games/publisher/11-bit-studios"
+      }
+    ],
+    "https://example.org/games/basedIn": [
+      {
+        "@id": "https://example.org/games/country/polshcha"
+      }
+    ],
+    "https://example.org/games/foundedBy": [
+      {
+        "@id": "https://example.org/games/person/hzhehozh-miekhovskyi"
+      }
+    ],
+    "https://example.org/games/foundingYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2010
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "11 bit studios"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/thq",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "THQ"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "THQ"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/playstation-4",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "PlayStation 4"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "PlayStation 4"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/sequelOf",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://example.org/games/Game"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://example.org/games/Game"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/Platform",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Platform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Thing"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/s-t-a-l-k-e-r-call-of-pripyat",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Call of Pripyat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Call of Pripyat"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/gsc-game-world"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      },
+      {
+        "@id": "https://example.org/games/genre/survival-horror"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/gsc-world-publishing"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2009
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      }
+    ],
+    "https://example.org/games/sequelOf": [
+      {
+        "@id": "https://example.org/games/game/s-t-a-l-k-e-r-clear-sky"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2009"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Call of Pripyat"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/studio/larian-studios",
+    "@type": [
+      "https://example.org/games/Studio"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Larian Studios"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Larian Studios"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://example.org/games/publisher/larian-studios"
+      }
+    ],
+    "https://example.org/games/basedIn": [
+      {
+        "@id": "https://example.org/games/country/belhiia"
+      }
+    ],
+    "https://example.org/games/foundedBy": [
+      {
+        "@id": "https://example.org/games/person/sven-vinke"
+      }
+    ],
+    "https://example.org/games/foundingYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1996
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Larian Studios"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/nintendo-switch",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Nintendo Switch"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Nintendo Switch"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/dying-light",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Dying Light"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Dying Light"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/techland"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/survival-horror"
+      },
+      {
+        "@id": "https://example.org/games/genre/pryhodnytska-hra"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/warner-bros-interactive-entertainment"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2015
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-4"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-one"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2015"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Dying Light"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/person/pavel-markhevka",
+    "@type": [
+      "https://example.org/games/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Павел Мархевка"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "uk",
+        "@value": "Павел Мархевка"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/the-witcher-3-wild-hunt",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "The Witcher 3: Wild Hunt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "The Witcher 3: Wild Hunt"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/cd-projekt-red"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/rolova-hra"
+      },
+      {
+        "@id": "https://example.org/games/genre/pryhodnytska-hra"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/cd-projekt"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2015
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-4"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-one"
+      },
+      {
+        "@id": "https://example.org/games/platform/nintendo-switch"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2015"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "The Witcher 3: Wild Hunt"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/half-life-2",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Half-Life 2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Half-Life 2"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/valve"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/valve"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2004
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-360"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2004"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Half-Life 2"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/11-bit-studios",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "11 bit studios"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "11 bit studios"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/country/polshcha",
+    "@type": [
+      "https://example.org/games/Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Польща"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Польща"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/metro-2033",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Metro 2033"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Metro 2033"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/4a-games"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      },
+      {
+        "@id": "https://example.org/games/genre/survival-horror"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/thq"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2010
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-360"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2010"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Metro 2033"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/studio/4a-games",
+    "@type": [
+      "https://example.org/games/Studio"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "4A Games"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "4A Games"
+      }
+    ],
+    "https://example.org/games/basedIn": [
+      {
+        "@id": "https://example.org/games/country/malta"
+      }
+    ],
+    "https://example.org/games/foundedBy": [
+      {
+        "@id": "https://example.org/games/person/andrii-prokhorov"
+      }
+    ],
+    "https://example.org/games/foundingYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2006
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "4A Games"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/country/malta",
+    "@type": [
+      "https://example.org/games/Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Мальта"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Мальта"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/xbox-360",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Xbox 360"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Xbox 360"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/genre/survival-horror",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Survival horror"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Survival horror"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/genre/rolova-hra",
+    "@type": [
+      "https://example.org/games/Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Рольова гра"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Рольова гра"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/xbox-series-x-s",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Xbox Series X/S"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Xbox Series X/S"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/s-t-a-l-k-e-r-clear-sky",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Clear Sky"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Clear Sky"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/gsc-game-world"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/shuter-vid-pershoi-osoby"
+      },
+      {
+        "@id": "https://example.org/games/genre/survival-horror"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/deep-silver"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2008
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      }
+    ],
+    "https://example.org/games/sequelOf": [
+      {
+        "@id": "https://example.org/games/game/s-t-a-l-k-e-r-shadow-of-chernobyl"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2008"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "S.T.A.L.K.E.R.: Clear Sky"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/game/frostpunk",
+    "@type": [
+      "https://example.org/games/Game"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "uk",
+        "@value": "Frostpunk"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Frostpunk"
+      }
+    ],
+    "https://example.org/games/developedBy": [
+      {
+        "@id": "https://example.org/games/studio/11-bit-studios"
+      }
+    ],
+    "https://example.org/games/hasGenre": [
+      {
+        "@id": "https://example.org/games/genre/mistobudivnyi-symuliator"
+      },
+      {
+        "@id": "https://example.org/games/genre/symuliator-vyzhyvannia"
+      }
+    ],
+    "https://example.org/games/publishedBy": [
+      {
+        "@id": "https://example.org/games/publisher/11-bit-studios"
+      }
+    ],
+    "https://example.org/games/releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2018
+      }
+    ],
+    "https://example.org/games/releasedOn": [
+      {
+        "@id": "https://example.org/games/platform/windows"
+      },
+      {
+        "@id": "https://example.org/games/platform/playstation-4"
+      },
+      {
+        "@id": "https://example.org/games/platform/xbox-one"
+      }
+    ],
+    "https://schema.org/datePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2018"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "Frostpunk"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/platform/playstation-5",
+    "@type": [
+      "https://example.org/games/Platform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "PlayStation 5"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "PlayStation 5"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/games/publisher/cd-projekt",
+    "@type": [
+      "https://example.org/games/Publisher"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "CD Projekt"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "uk",
+        "@value": "CD Projekt"
+      }
+    ]
+  }
+]
