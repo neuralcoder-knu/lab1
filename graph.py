@@ -6,6 +6,7 @@ from rdflib.namespace import DCTERMS, FOAF, OWL, RDF, RDFS, XSD
 
 BASE = "https://example.org/games/"
 SCHEMA = Namespace("https://schema.org/")
+WDT = Namespace("http://www.wikidata.org/prop/direct/")
 
 
 class Slugger:
@@ -42,6 +43,7 @@ class KnowledgeGraph:
         self.graph.bind("dcterms", DCTERMS)
         self.graph.bind("foaf", FOAF)
         self.graph.bind("owl", OWL)
+        self.graph.bind("wdt", WDT)
 
     def uri(self, kind, value):
         return self.ns[f"{kind}/{Slugger.make(value)}"]
@@ -150,6 +152,9 @@ class KnowledgeGraph:
 
     def link_to(self, local_kind, local_label, external_uri):
         self.graph.add((self.uri(local_kind, local_label), OWL.sameAs, URIRef(external_uri)))
+
+    def add_inception(self, external_uri, inception):
+        self.graph.add((URIRef(external_uri), WDT.P571, Literal(inception, datatype=XSD.dateTime)))
 
     def save(self, path, fmt="turtle"):
         self.graph.serialize(path, format=fmt)

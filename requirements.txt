@@ -3,3 +3,4 @@ SPARQLWrapper>=2.0
 networkx>=3.0
 matplotlib>=3.7
 pyvis>=0.3
+certifi>=2023.7.22
