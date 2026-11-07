@@ -10,9 +10,9 @@ TURTLE = "games.ttl"
 JSONLD = "games.jsonld"
 
 EXTERNAL = [
-    ("studio", "GSC Game World", WikidataLinker.STUDIO_CLASS),
-    ("studio", "CD Projekt Red", WikidataLinker.STUDIO_CLASS),
-    ("game", "The Witcher 3: Wild Hunt", WikidataLinker.GAME_CLASS),
+    ("studio", "GSC Game World", WikidataLinker.STUDIO_CLASS, "GSC Game World"),
+    ("studio", "CD Projekt Red", WikidataLinker.STUDIO_CLASS, "CD Projekt RED"),
+    ("game", "The Witcher 3: Wild Hunt", WikidataLinker.GAME_CLASS, "The Witcher 3: Wild Hunt"),
 ]
 
 MANUAL_EDIT = """
