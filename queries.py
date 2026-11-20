@@ -92,11 +92,11 @@ ORDER BY ?founder DESC(?games)
                 "рекурсивний шлях властивості gm:sequelOf",
                 """
 SELECT ?later ?earlier WHERE {
-  ?b gm:sequelOf ?a .
+  ?b gm:sequelOf+ ?a .
   ?b schema:name ?later .
   ?a schema:name ?earlier .
 }
-ORDER BY ?earlier
+ORDER BY ?earlier ?later
 """),
         ]
 
